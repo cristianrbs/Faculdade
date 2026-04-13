@@ -37,11 +37,10 @@ void imprimirVetor(int v[], int tam) {
 
 int main() {
     int v[] = {7, 3, 5, 1, 4, 2};
-    int n1 = 6;
 
-    insertionSortDuplo(v, n1);
+    insertionSortDuplo(v);
 
-    imprimirVetor(v, n1);
+    imprimirVetor(v);
 
     return 0;
 }
