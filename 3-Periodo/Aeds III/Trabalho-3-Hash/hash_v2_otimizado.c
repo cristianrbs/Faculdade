@@ -3,7 +3,7 @@
 #include <string.h>
 #include <time.h>
 
-
+//! Cristian
 //! compilar: gcc -O2 -o hash_v2 hash_v2_otimizado.c
 //!executar: ./has_v2
 
