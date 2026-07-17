@@ -1,0 +1,6 @@
+notificacao\ProcessadorPagamentoBoleto.class
+notificacao\IProcessadorPagamento.class
+service\ServicoPagamento.class
+classes\Cliente.class
+main\main.class
+notificacao\ProcessadorPagamentoCartao.class
