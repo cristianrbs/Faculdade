@@ -1,0 +1,10 @@
+{
+  "name": "fixit-simples",
+  "version": "1.0.0",
+  "description": "FixIt - Portal de Atendimento (Parte 1: HTML5 e CSS3)",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "license": "ISC"
+}

@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FixIt - Portal de Atendimento</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <div class="container">
+
+    <!-- Menu lateral -->
+    <nav class="menu">
+      <div class="sub-menu">
+        <h2>FixIt</h2>
+      <ul>
+        <li><a href="#inicio">Início</a></li>
+        <li><a href="#planos">Planos</a></li>
+        <li><a href="#chamado">Abrir chamado</a></li>
+      </ul>
+      </div>
+    </nav> 
+
+    <!-- Conteúdo -->
+    <main class="conteudo">
+
+      <header id="inicio">
+        <h1>Portal de Atendimento ao Cliente</h1>
+        <p>Acompanhe seus chamados e fale com o suporte.</p>
+      </header>
+
+      <!-- Cartões do dashboard -->
+      <section class="cards">
+        <div class="card">
+          <h3>12</h3>
+          <p>Chamados abertos</p>
+        </div>
+        <div class="card">
+          <h3>5</h3>
+          <p>Em andamento</p>
+        </div>
+        <div class="card">
+          <h3>148</h3>
+          <p>Resolvidos</p>
+        </div>
+      </section>
+
+      <!-- Tabela de planos -->
+      <section id="planos">
+        <h2>Planos de suporte</h2>
+        <table>
+          <thead>
+            <tr>
+              <th>Plano</th>
+              <th>Atendimento</th>
+              <th>Preço</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Básico</td>
+              <td>Por e-mail</td>
+              <td>R$ 30,80</td>
+            </tr>
+            <tr>
+              <td>Médio</td>
+              <td>Por e-mail e chat</td>
+              <td>R$ 85,00</td>
+            </tr>
+            <tr>
+              <td>Completo</td>
+              <td>Por e-mail, chat e telefone</td>
+              <td>R$ 140,00</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+
+      <!-- Formulário -->
+      <section id="chamado">
+        <h2>Abrir novo chamado</h2>
+        <form action="#" method="post">
+
+          <label for="nome">Nome:</label>
+          <input type="text" id="nome" name="nome" required>
+
+          <label for="email">E-mail:</label>
+          <input type="email" id="email" name="email" required>
+
+          <label for="categoria">Categoria:</label>
+          <select id="categoria" name="categoria">
+            <option value="erro">Erro no sistema</option>
+            <option value="acesso">Problema de acesso</option>
+            <option value="duvida">Dúvida</option>
+          </select>
+
+          <label for="prioridade">Prioridade:</label>
+          <select id="prioridade" name="prioridade">
+            <option value="baixa">Baixa</option>
+            <option value="media">Média</option>
+            <option value="alta">Alta</option>
+            <option value="critica">Crítica</option>
+          </select>
+
+          <label for="assunto">Assunto:</label>
+          <input type="text" id="assunto" name="assunto" required>
+
+          <label for="descricao">Descrição do problema:</label>
+          <textarea id="descricao" name="descricao" rows="5" required></textarea>
+
+          <p>Contato preferido:</p>
+          <input type="radio" id="r-email" name="contato" value="email" checked>
+          <label for="r-email">E-mail</label>
+          <input type="radio" id="r-tel" name="contato" value="telefone">
+          <label for="r-tel">Telefone</label>
+
+          <p>
+            <input type="checkbox" id="termos" name="termos" required>
+            <label for="termos">Concordo em receber atualizações</label>
+          </p>
+
+          <button type="submit">Enviar chamado</button>
+          <button type="reset">Limpar</button>
+        </form>
+      </section>
+
+    </main>
+  </div>
+
+  <!-- Rodapé -->
+  <footer>
+    <p>FixIt - suporte@fixit.com.br - (32) 0000-0000</p>
+    <p>&copy; 2026 - Todos os direitos reservados.</p>
+  </footer>
+
+</body>
+</html>
